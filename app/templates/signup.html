@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+<div class="container-fluid w-75 mt-5">
+    <br>
+    <h1>Nuevo Usuario</h1>
+</div>
+<hr>
+
+<div class="container-fluid w-75">
+    <form action="" method="post" class="form" role="form">
+        {{ form.csrf_token() }}
+        {{ wtf.form_field(form.username, class='form-control') }}
+        {{ wtf.form_field(form.password, class='form-control') }}
+        {{ wtf.form_field(form.email, class='form-control') }}
+        {{ wtf.form_field(form.submit, class='btn btn-success') }}
+      </form>
+</div>
+
+{% endblock %}

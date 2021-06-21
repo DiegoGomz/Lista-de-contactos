@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+<div class="contactBackground">
+    <div class="container-fluid w-75 mt-2">
+        <br>
+    </div>
+    <hr>
+    
+    <div class="container-fluid w-25 NewContact">
+        <div class="row justify-content-center" >
+            <img src="{{url_for('static', filename='images/contact.png')}}" class="img-fluid imgSize" alt="Responsive image">
+        </div>
+        <form action="" method="post" class="form formContact mt-3" role="form">
+            {{ form.csrf_token() }}
+            {{ wtf.form_field(form.name, class='form-control') }}
+            {{ wtf.form_field(form.email, class='form-control') }}
+            {{ wtf.form_field(form.number, class='form-control') }}
+            {% if edit %}
+            <div class="text-center">
+                <input type ="submit" value="Editar" class="btn btn-success text-center">
+            </div>
+            {% else %}
+            <div class="text-center">
+                {{ wtf.form_field(form.submit, class='btn btn-success') }}
+            </div>
+            {% endif %}
+          </form>
+    </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+  }
+  
+.fondo {
+    background-image: url("../images/agenda.jpg");
+    
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size:cover;
+   
+}
+
+.contactBackground {
+  background-image: url("../images/black.jpg");
+  
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size:cover;
+ 
+}
+
+.formLogin {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+  }
+
+  
+
+  .formContact label {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .formLogin label {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .container {
+    margin: 5% auto;
+    padding: 80px ;
+    height: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.884);
+    -webkit-box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+-moz-box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+}
+
+.NewContact {
+  margin: 3em auto;
+  padding: 3em ;
+  height: auto;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.900);
+  -webkit-box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+-moz-box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+}
+
+.LoginContact {
+  margin: 7em auto;
+  padding: 3em ;
+  height: auto;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.900);
+  -webkit-box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+-moz-box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+}
+
+.menuContact {
+  margin: 1em auto;
+  padding: 1em ;
+  height: auto;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.900);
+  -webkit-box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+-moz-box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.400);
+}
+
+.container h1 {
+  margin-top: 10;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  }
+.imgSize{
+width: 30%;
+height: 30%;
+}
+
+.imgList{  
+  text-align: center;
+  width: 60%;
+  height: 60%;
+  }
+
+ .menuContact hr  {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(0 0 0 / 32%);
+}
