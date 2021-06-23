@@ -1,1 +1,1 @@
-web: flask db upgrade; gunicorn agenda:app
+web: flask db upgrade; gunicorn contacts:app
